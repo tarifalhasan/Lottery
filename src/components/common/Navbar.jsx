@@ -1,16 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BsCart3, BsInstagram } from 'react-icons/bs';
+
 import { useSelector } from 'react-redux';
+import { navLinks } from '../data/data';
 const Navbar = () => {
-  let Carts = useSelector(cart => cart.cart.length);
-  let totalCart = 0;
-  if (Carts <= 9) {
-    totalCart = '0' + Carts;
-  } else {
-    totalCart = Carts;
-  }
+  let Carts = useSelector(cart => cart);
+
   return (
     <div className="w-full hidden lg:block bg-[#0085FF] ">
       <div className="main-container py-5">
@@ -19,21 +15,11 @@ const Navbar = () => {
             <Link href={'/'}>Logo</Link>
           </div>
           <div className="flex self-center gap-x-16">
-            <Link href={'/'}>
-              <span className="nav-link">Home</span>
-            </Link>
-            <Link href={'/'}>
-              <span className="nav-link">Campaigns</span>
-            </Link>
-            <Link href={'/'}>
-              <span className="nav-link">Winners</span>
-            </Link>
-            <Link href={'/'}>
-              <span className="nav-link"> Why Us</span>
-            </Link>
-            <Link href={'/'}>
-              <span className="nav-link">Blog</span>
-            </Link>
+            {navLinks.map((link, key) => (
+              <Link key={key} href={link.link} className="nav-link">
+                {link.name}
+              </Link>
+            ))}
           </div>
           <div className="flex self-center gap-x-4">
             <div className="flex gap-x-3.5">
@@ -46,12 +32,12 @@ const Navbar = () => {
               <Image src="/images/insta.svg" alt="" width={27} height={27} />
             </div>
             <div className="flex gap-x-1">
-              <Link href={'/'}>
+              <Link href={'/register'}>
                 <span className="bg-[#010567] flex self-center border border-transparent px-7 py-2.5 text-white ">
                   Register
                 </span>
               </Link>
-              <Link href={'/'}>
+              <Link href={'/signin'}>
                 <span className="text-white flex self-center border border-white px-7 py-2.5">
                   Sign In
                 </span>

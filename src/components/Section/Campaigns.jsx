@@ -3,7 +3,9 @@ import addToCart from '../../redux/cart/CartAction';
 
 import DesktopImage from '../../../public/images/desktop.jpg';
 import Image from 'next/image';
-import PrimaryBtn from '../ui/Button';
+
+import AddToCartBtn from '../ui/AddToCartBtn';
+import AwesomeButton from '../ui/Button';
 
 const Campaigns = () => {
   const dispatch = useDispatch();
@@ -56,18 +58,8 @@ const Campaigns = () => {
                 <h3 className="text-2xl text-center text-[#464848] font-semibold mb-8">
                   {item.price}
                 </h3>
-                <div className="flex w-full cursor-pointer justify-center bg-[#01FF0B] py-2.5 rounded-full">
-                  <button onClick={() => handleAddToCart(item)}>
-                    <span className="flex gap-x-2 w-full">
-                      <Image
-                        src="/images/cart.svg"
-                        alt=""
-                        width={20}
-                        height={20}
-                      />
-                      <span>{item.buttonTitle}</span>
-                    </span>
-                  </button>
+                <div className="flex items-center justify-center ">
+                  <AddToCartBtn onClick={() => handleAddToCart(item)} />
                 </div>
               </div>
             );
@@ -75,7 +67,7 @@ const Campaigns = () => {
         </div>
 
         <div className="flex item-center pt-7 pb-20 justify-center">
-          <PrimaryBtn name="Load More" bg="bg-white" color="text-[#01A8FF]" />
+          <AwesomeButton />
         </div>
       </div>
     </div>
