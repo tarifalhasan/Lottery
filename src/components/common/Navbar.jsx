@@ -12,44 +12,38 @@ const Navbar = () => {
     totalCart = Carts;
   }
   return (
-    <div className="w-full hidden  z-50 lg:block bg-[#0085FF] ">
+    <div className="w-full hidden lg:block bg-[#0085FF] ">
       <div className="main-container py-5">
         <div className="flex justify-between">
           <div className="flex self-center">
             <Link href={'/'}>Logo</Link>
           </div>
-          <div className="flex self-center space-x-10">
+          <div className="flex self-center gap-x-16">
             <Link href={'/'}>
               <span className="nav-link">Home</span>
             </Link>
-            <Link href={'/#compaigns'}>
+            <Link href={'/'}>
               <span className="nav-link">Campaigns</span>
             </Link>
-            <Link href={'/#winners'}>
+            <Link href={'/'}>
               <span className="nav-link">Winners</span>
             </Link>
-            <Link href={'/#why_us'}>
+            <Link href={'/'}>
               <span className="nav-link"> Why Us</span>
             </Link>
-
-            <Link href={'/#blog'}>
+            <Link href={'/'}>
               <span className="nav-link">Blog</span>
             </Link>
           </div>
           <div className="flex self-center gap-x-4">
-            <div className="flex items-center gap-x-6">
-              <button className="block relative w-[45px] ">
-                <BsInstagram size={30} className="text-white" />
-                <span className="flex justify-center items-center left-[23px] right-0 -top-[10px] absolute w-7 h-7 text-[#111] rounded-full bg-[#01FF0B]">
-                  <samp> 03</samp>
-                </span>
-              </button>
-              <button type="button" className="block relative w-[45px] ">
-                <BsCart3 size={30} className="text-white" />
-                <span className="flex justify-center items-center left-[23px] right-0 -top-[10px] absolute w-7 h-7 text-[#111] rounded-full bg-[#01FF0B]">
-                  <samp> {totalCart}</samp>
-                </span>
-              </button>
+            <div className="flex gap-x-3.5">
+              <Image
+                src="/images/cartwhite.svg"
+                alt=""
+                width={27}
+                height={27}
+              />
+              <Image src="/images/insta.svg" alt="" width={27} height={27} />
             </div>
             <div className="flex gap-x-1">
               <Link href={'/'}>
