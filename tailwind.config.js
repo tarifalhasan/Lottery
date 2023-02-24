@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         border: 'rgba(67, 70, 72, 0.6)',
       },
+      fontSize: {
+        sm: ['1.2rem'],
+      },
     },
   },
   plugins: [],

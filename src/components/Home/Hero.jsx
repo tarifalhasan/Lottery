@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const Hero = ({ title, description, featureImage }) => {
   return (
-    <div className="hero-gradient pt-28">
-      <div className="main-container pb-16  ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div>
+    <div className="hero-gradient pt-12">
+      <div className="main-container pb-20  ">
+        <div className="flex flex-col gap-y-8 lg:flex-row justify-between items-center gap-x-6">
+          <div className="basis-[50%]">
             <h1 className=" text-[38px] md:text-[42px] leading-[50px] font-bold text-white mb-5">
               {title}
             </h1>
@@ -19,7 +19,7 @@ const Hero = ({ title, description, featureImage }) => {
               </span>
             </Link>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Image src={featureImage} alt={title} />
           </div>
         </div>

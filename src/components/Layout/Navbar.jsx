@@ -12,7 +12,7 @@ const Navbar = () => {
     totalCart = Carts;
   }
   return (
-    <div className="w-full hidden fixed z-50 lg:block bg-[#0085FF] ">
+    <div className="w-full hidden  z-50 lg:block bg-[#0085FF] ">
       <div className="main-container py-5">
         <div className="flex justify-between">
           <div className="flex self-center">
@@ -40,13 +40,13 @@ const Navbar = () => {
             <div className="flex items-center gap-x-6">
               <button className="block relative w-[45px] ">
                 <BsInstagram size={30} className="text-white" />
-                <span className="flex justify-center items-center left-[23px] right-0 -top-[10px] absolute w-8 h-8 text-[#111] rounded-full bg-[#01FF0B]">
+                <span className="flex justify-center items-center left-[23px] right-0 -top-[10px] absolute w-7 h-7 text-[#111] rounded-full bg-[#01FF0B]">
                   <samp> 03</samp>
                 </span>
               </button>
               <button type="button" className="block relative w-[45px] ">
                 <BsCart3 size={30} className="text-white" />
-                <span className="flex justify-center items-center left-[23px] right-0 -top-[10px] absolute w-8 h-8 text-[#111] rounded-full bg-[#01FF0B]">
+                <span className="flex justify-center items-center left-[23px] right-0 -top-[10px] absolute w-7 h-7 text-[#111] rounded-full bg-[#01FF0B]">
                   <samp> {totalCart}</samp>
                 </span>
               </button>

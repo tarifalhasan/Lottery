@@ -16,18 +16,18 @@ const HomeSlider = () => {
   return (
     <Slider {...settings}>
       <Hero
-        description=" If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
-        title="Guaranteed Wins £10M+ Prizes Given Out Pursuit Your Dream"
+        title="Lorem Ipsum is simply dummy text of the printing"
+        description="If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
         featureImage={HeroImage}
       />
       <Hero
-        description=" If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
-        title="Guaranteed Wins £10M+ Prizes Given Out Pursuit Your Dream"
+        title="Lorem Ipsum is simply dummy text of the printing"
+        description="If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
         featureImage={HeroImage}
       />
       <Hero
-        description=" If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
-        title="Guaranteed Wins £10M+ Prizes Given Out Pursuit Your Dream"
+        title="Lorem Ipsum is simply dummy text of the printing"
+        description="If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
         featureImage={HeroImage}
       />
     </Slider>

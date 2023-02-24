@@ -3,6 +3,7 @@ import addToCart from '../../redux/cart/CartAction';
 
 import DesktopImage from '../../../public/images/desktop.jpg';
 import Image from 'next/image';
+import PrimaryBtn from '../ui/Button';
 
 const Campaigns = () => {
   const dispatch = useDispatch();
@@ -12,16 +13,19 @@ const Campaigns = () => {
   };
 
   return (
-    <div className="w-full" id="compaigns">
-      <div className="main-container pt-20 pb-32">
-        <h1 className="text-[#434648] text-[32px] md:text-[48px] font-semibold text-center mb-6">
+    <div className="w-full bg" id="compaigns">
+      <div className="main-container pt-20 ">
+        <h1 className="text-[#fff] text-[32px] md:text-[48px] font-semibold text-center mb-6">
           Campaigns Ending Soon
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {data.map((item, index) => {
             return (
-              <div key={index} className="card-shoadow p-4 rounded-lg">
-                <div className="bg-[#F6F7F9] relative mb-5 p-4 flex rounded-lg justify-center">
+              <div
+                key={index}
+                className="card-shoadow bg-[#F6F7F9] p-6 rounded-lg"
+              >
+                <div className=" relative mb-5 flex rounded-lg justify-center">
                   <div className="absolute -top-[25px] -left-4  lg:block">
                     <span className="lg:w-16 lg:h-16 w-16 h-16 mr-8 rounded-full sold-bg flex flex-col justify-center p-3 lg:p-4 items-start </span>">
                       25/
@@ -68,6 +72,10 @@ const Campaigns = () => {
               </div>
             );
           })}
+        </div>
+
+        <div className="flex item-center pt-7 pb-20 justify-center">
+          <PrimaryBtn name="Load More" bg="bg-white" color="text-[#01A8FF]" />
         </div>
       </div>
     </div>

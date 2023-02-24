@@ -5,11 +5,11 @@ import JackPotIcon from '../../../public/images/jackpot.svg';
 import Image from 'next/image';
 const WhyChooseUs = () => {
   return (
-    <div className="main-container" id="why_us">
-      <h1 className="text-center font-bold text-[#434648] text-[32px] md:text-[48px] mb-10">
+    <div className="main-container py-12 text-center" id="why_us">
+      <h1 className=" font-bold text-[#434648] text-[2.000em] md:text-[3.000em] mb-10">
         Why Choose Us?
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4">
         {data.map((item, index) => {
           return (
             <div key={index}>
@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
               <h3 className="text-center text-2xl text-[#464848] font-bold mb-2 ">
                 {item.title}
               </h3>
-              <p className=" text-base md:text-lg font-normal text-[#464848] text-center">
+              <p className=" text-base md:text-lg font-normal text-[#434648] ">
                 {item.description}
               </p>
             </div>

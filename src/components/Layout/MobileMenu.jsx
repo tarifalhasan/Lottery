@@ -11,7 +11,7 @@ const MobileMenu = () => {
     setIsOpen(prevState => !prevState);
   };
   return (
-    <div className="block w-full fixed z-50 lg:hidden bg-[#0085FF]">
+    <div className="w-full   lg:hidden bg-[#0085FF]">
       <div className="flex justify-between px-4 py-4">
         <div className="flex self-center">
           <Link href={'/'}>Logo</Link>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,7 +24,11 @@ body {
   @apply self-center text-base font-normal text-[#434648];
 }
 .hero-gradient {
-  background: linear-gradient(180deg, #0085ff 22.2%, rgba(0, 133, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #0085ff 17.92%,
+    rgba(0, 133, 255, 0) 100%
+  );
   backdrop-filter: blur(2px);
 }
 .btn-shadow {
@@ -69,15 +73,15 @@ body {
 }
 .play-box::after {
   content: '';
-  position: absolute;
-  height: 2px;
-  width: 200px;
-  left: 80px;
-  top: 50%;
-  border: 1px dashed #01a8ff;
+
+  @apply absolute h-[2px] w-[200px] left-[80px] top-1/2 border border-dashed border-[#01a8ff];
 }
 .vertical-line {
   display: none;
+}
+#compaigns {
+  background: rgba(0, 133, 255, 0.4);
+  backdrop-filter: blur(2px);
 }
 @media only screen and (max-width: 768px) {
   .play-box::after {
