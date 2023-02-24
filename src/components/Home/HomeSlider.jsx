@@ -30,6 +30,16 @@ const HomeSlider = () => {
         description="If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
         featureImage={HeroImage}
       />
+      <Hero
+        title="Lorem Ipsum is simply dummy text of the printing"
+        description="If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
+        featureImage={HeroImage}
+      />
+      <Hero
+        title="Lorem Ipsum is simply dummy text of the printing"
+        description="If you take even a few minutes to consider exactly how long a meeting should take, you could save critical time on the day of millions of years are being intentional the appointment."
+        featureImage={HeroImage}
+      />
     </Slider>
   );
 };

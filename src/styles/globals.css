@@ -106,8 +106,12 @@ body {
 .slick-slider {
   overflow: hidden;
 }
+.slick-dots {
+  bottom: -47px !important;
+}
 .slick-dots li {
   height: 65px !important;
+  width: 14px !important;
 }
 .slick-dots li button:before {
   font-size: 14px !important;
