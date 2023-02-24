@@ -46,7 +46,7 @@ const Campaigns = () => {
                 </div>
                 <div className="flex justify-between mb-5">
                   <Image src="/images/win.svg" alt="" width={25} height={20} />
-                  <span className="flex justify-center items-center bg-[#FFEDF4] rounded-full text-xs text-[#FF508F] px-6 py-0.5">
+                  <span className="flex justify-center items-center bg-[#FFEDF4] rounded-full font-semibold text-[0.9em] text-[#FF508F] px-6 py-0.5">
                     Ends Today
                   </span>
                 </div>

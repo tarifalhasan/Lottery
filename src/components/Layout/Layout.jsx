@@ -1,7 +1,6 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import MobileMenu from "./MobileMenu";
+import Navbar from '../common/Navbar';
+import Footer from '../common/Footer';
+import MobileMenu from '../common/MobileMenu';
 
 const Layout = ({ children }) => {
   return (
